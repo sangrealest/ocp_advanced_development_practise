@@ -13,7 +13,8 @@ node('maven-appdev') {
   // Checkout Source Code
   stage('Checkout Source') {
     
-    git credentialsId: '9361f934-435a-43af-89f4-44fcd20b3a03', url: 'http://172.30.195.1:3000/CICDLabs/openshift-tasks-private.git'
+    git credentialsId: '9361f934-435a-43af-89f4-44fcd20b3a03', url: 'http://gogs.shankers-gogs.svc.cluster.local:3000/CICDLabs/openshift-tasks-private.git'
+
 
   }
 
